@@ -1,0 +1,2557 @@
+fileFormatVersion: 2
+guid: 0b6cac84e747f45a1bf3fcf3036ca223
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8282021335683267934
+    second: jump
+  - first:
+      213: 6384764383943489738
+    second: jump_vertical
+  - first:
+      213: -4421317091461525045
+    second: idle
+  - first:
+      213: -8571237535354420781
+    second: run01
+  - first:
+      213: 7307584046343625679
+    second: run02
+  - first:
+      213: -3857755380291315876
+    second: run03
+  - first:
+      213: 4270981425678223192
+    second: run04
+  - first:
+      213: 7952813566302405143
+    second: naked_jump
+  - first:
+      213: 8471213459204368633
+    second: naked_jump_vertical
+  - first:
+      213: -7895378126352571786
+    second: crouch
+  - first:
+      213: 4967064989390440547
+    second: naked_idle
+  - first:
+      213: -938246543697030760
+    second: naked_run01
+  - first:
+      213: 3311974166373207943
+    second: naked_run02
+  - first:
+      213: 1304408956799400130
+    second: naked_run03
+  - first:
+      213: -7384041813129871904
+    second: naked_run04
+  - first:
+      213: 7800123708734511293
+    second: Arthur_trans_21
+  - first:
+      213: -3885922448610566511
+    second: Arthur_trans_22
+  - first:
+      213: -1496149811769816087
+    second: Arthur_trans_23
+  - first:
+      213: -9003610446737639745
+    second: Arthur_trans_24
+  - first:
+      213: 7177387246885845506
+    second: Arthur_trans_25
+  - first:
+      213: -3327609663589520554
+    second: Arthur_trans_26
+  - first:
+      213: -8628639963757659107
+    second: Arthur_trans_27
+  - first:
+      213: -7140670148764069853
+    second: Arthur_trans_28
+  - first:
+      213: -1767701275821858999
+    second: naked_crouch
+  - first:
+      213: 1953612364845813094
+    second: throw01
+  - first:
+      213: 8302571644156249745
+    second: throw02
+  - first:
+      213: -7609219481157487802
+    second: crouch_throw01
+  - first:
+      213: 2304765527619997165
+    second: crouch_throw02
+  - first:
+      213: 4378407101250382066
+    second: climb
+  - first:
+      213: 7048212458202326914
+    second: climb_top01
+  - first:
+      213: 1028026402273784078
+    second: climb_top02
+  - first:
+      213: -3014413861076506470
+    second: naked_throw01
+  - first:
+      213: 5604884724639512974
+    second: naked_throw02
+  - first:
+      213: 9162255483022451550
+    second: naked_crouch_throw01
+  - first:
+      213: -2055183946468517552
+    second: naked_crouch_throw02
+  - first:
+      213: -6050634314419818960
+    second: naked_climb
+  - first:
+      213: 7045721279592340272
+    second: naked_climb_top01
+  - first:
+      213: 5442845249908277203
+    second: naked_climb_top02
+  - first:
+      213: -8567838997656414411
+    second: first_wound01
+  - first:
+      213: -2484276452879261318
+    second: first_wound02
+  - first:
+      213: -7715965065862215839
+    second: first_wound03
+  - first:
+      213: -7083012796635845878
+    second: armour
+  - first:
+      213: 3867747603093758600
+    second: wounded02
+  - first:
+      213: 4659437987281197389
+    second: wounded01
+  - first:
+      213: -1392599488939066433
+    second: wounded03
+  - first:
+      213: 3818277817496027094
+    second: wounded04
+  - first:
+      213: -7658651994426489746
+    second: wounded05
+  - first:
+      213: -4657515413255504181
+    second: wounded06
+  - first:
+      213: 7771578831028247839
+    second: Arthur_trans_96
+  - first:
+      213: 4608899548532116310
+    second: weapon_axe
+  - first:
+      213: -6156216675329001576
+    second: Arthur_trans_112
+  - first:
+      213: -5744100084459330126
+    second: Arthur_trans_113
+  - first:
+      213: 3283369638652363294
+    second: Arthur_trans_114
+  - first:
+      213: 6317605748950381058
+    second: weapon_spear
+  - first:
+      213: -1066059310724015915
+    second: Arthur_trans_116
+  - first:
+      213: -8182170648194544225
+    second: Arthur_trans_117
+  - first:
+      213: 8208027313088717967
+    second: Arthur_trans_118
+  - first:
+      213: -5167378331515604006
+    second: weapon_dagger
+  - first:
+      213: 8450929437629535057
+    second: Arthur_trans_120
+  - first:
+      213: 3434972770860190027
+    second: Arthur_trans_121
+  - first:
+      213: -6603688631507056722
+    second: Arthur_trans_122
+  - first:
+      213: 2164395060632783502
+    second: Arthur_trans_123
+  - first:
+      213: 6591986657928163026
+    second: Arthur_trans_124
+  - first:
+      213: -563997160555340730
+    second: Arthur_trans_125
+  - first:
+      213: -5000222036752034252
+    second: Arthur_trans_126
+  - first:
+      213: 1057328129545677497
+    second: weapon_fire
+  - first:
+      213: 7875304203065549125
+    second: Arthur_trans_128
+  - first:
+      213: -2819131121702270
+    second: Arthur_trans_129
+  - first:
+      213: -2953016023099388833
+    second: Arthur_trans_130
+  - first:
+      213: 7359853809578799381
+    second: Arthur_trans_131
+  - first:
+      213: 4929115264375708903
+    second: Arthur_trans_132
+  - first:
+      213: 2834093580040570617
+    second: Arthur_trans_133
+  - first:
+      213: 3731018630998378862
+    second: Arthur_trans_134
+  - first:
+      213: 2912740973683227547
+    second: Arthur_trans_137
+  - first:
+      213: 5244114555302746559
+    second: Arthur_trans_138
+  - first:
+      213: 7629205880165690388
+    second: Arthur_trans_139
+  - first:
+      213: 2865753145326918849
+    second: Arthur_trans_140
+  - first:
+      213: 5906220545828072272
+    second: Arthur_trans_141
+  - first:
+      213: 6331291425330480422
+    second: Arthur_trans_142
+  - first:
+      213: -4258773683387444049
+    second: Arthur_trans_159
+  - first:
+      213: 5830748178835142506
+    second: Arthur_trans_160
+  - first:
+      213: -388168406141211327
+    second: Arthur_trans_161
+  - first:
+      213: -9045211177904843913
+    second: Arthur_trans_162
+  - first:
+      213: -1934985994616807222
+    second: Arthur_trans_163
+  - first:
+      213: 493020022813923220
+    second: Arthur_trans_164
+  - first:
+      213: 7085771093054321157
+    second: Arthur_trans_165
+  - first:
+      213: 337573249987875973
+    second: Arthur_trans_166
+  - first:
+      213: 3007762556861982924
+    second: Arthur_trans_167
+  - first:
+      213: 2855049542800248782
+    second: Arthur_trans_177
+  - first:
+      213: 4750872410551784251
+    second: Arthur_trans_178
+  - first:
+      213: 6556176477880438819
+    second: Arthur_trans_179
+  - first:
+      213: 803386068405940126
+    second: Arthur_trans_180
+  - first:
+      213: 17581298356403866
+    second: Arthur_trans_181
+  - first:
+      213: -3640810586844669344
+    second: Arthur_trans_182
+  - first:
+      213: -4842458865870667702
+    second: Arthur_trans_183
+  - first:
+      213: 3718312172643236825
+    second: Arthur_trans_185
+  - first:
+      213: 2378102230010486029
+    second: Arthur_trans_186
+  - first:
+      213: -8687815414808585629
+    second: Arthur_trans_192
+  - first:
+      213: 4618345720238977960
+    second: Arthur_trans_193
+  - first:
+      213: 5302891596959889532
+    second: Arthur_trans_194
+  - first:
+      213: 3595052736747739612
+    second: Arthur_trans_198
+  - first:
+      213: 4528511557768349320
+    second: Arthur_trans_200
+  - first:
+      213: -5320766465174649294
+    second: Arthur_trans_204
+  - first:
+      213: 7740187434041294652
+    second: Arthur_trans_205
+  - first:
+      213: 181467282509149408
+    second: Arthur_trans_211
+  - first:
+      213: 125661206691824935
+    second: Arthur_trans_212
+  - first:
+      213: 24650967240313515
+    second: Arthur_trans_219
+  - first:
+      213: -7213812426497329077
+    second: Arthur_trans_220
+  - first:
+      213: -4900726431027788311
+    second: Arthur_trans_238
+  - first:
+      213: -3189864089799428905
+    second: Arthur_trans_239
+  - first:
+      213: 8654276237075102064
+    second: Arthur_trans_240
+  - first:
+      213: 8500392303424804739
+    second: Arthur_trans_248
+  - first:
+      213: -696582109675801369
+    second: Arthur_trans_269
+  - first:
+      213: -7759398606082758782
+    second: Arthur_trans_270
+  - first:
+      213: -4571189033153598775
+    second: Arthur_trans_271
+  - first:
+      213: 9133745299790822360
+    second: Arthur_trans_272
+  - first:
+      213: -3589781483767939086
+    second: intro
+  - first:
+      213: -3068739719185710101
+    second: win
+  - first:
+      213: 6097212234440127078
+    second: Arthur_trans_275
+  - first:
+      213: 1902488812068473210
+    second: Arthur_trans_276
+  - first:
+      213: -4153683419702365690
+    second: Arthur_trans_277
+  - first:
+      213: 4065704464933842100
+    second: Arthur_trans_278
+  - first:
+      213: -5126218334387132788
+    second: Arthur_trans_279
+  - first:
+      213: 6008595847443877543
+    second: Arthur_trans_280
+  - first:
+      213: -7197721381953373408
+    second: Arthur_trans_281
+  - first:
+      213: -2153489784303109706
+    second: Arthur_trans_282
+  - first:
+      213: -3297379386156780492
+    second: Arthur_trans_283
+  - first:
+      213: -283412553897386753
+    second: Arthur_trans_289
+  - first:
+      213: -2065906892754799992
+    second: Arthur_trans_290
+  - first:
+      213: 7654878518956491175
+    second: Arthur_trans_291
+  - first:
+      213: 5001067194121221896
+    second: Arthur_trans_292
+  - first:
+      213: 3729608444320132995
+    second: Arthur_trans_294
+  - first:
+      213: 4808324142584036112
+    second: Arthur_trans_295
+  - first:
+      213: 351914623462612971
+    second: Arthur_trans_296
+  - first:
+      213: -8843056092039705985
+    second: Arthur_trans_300
+  - first:
+      213: 418225555705891101
+    second: Arthur_trans_309
+  - first:
+      213: -6030607404566640610
+    second: Arthur_trans_311
+  - first:
+      213: -5179099874461838734
+    second: Arthur_trans_312
+  - first:
+      213: 8771566458337306652
+    second: Arthur_trans_314
+  - first:
+      213: -5076805372880793349
+    second: Arthur_trans_0
+  - first:
+      213: -8823325284504385748
+    second: Arthur_trans_1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jump
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 551
+        width: 32
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a28468a979501d80800000000000000
+      internalID: -8282021335683267934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_vertical
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 552
+        width: 27
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac87487116d3b9850800000000000000
+      internalID: 6384764383943489738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 533
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1921cc78354a2c0800000000000000
+      internalID: -4421317091461525045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run01
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 533
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d184bbbfd8dc0980800000000000000
+      internalID: -8571237535354420781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run02
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 533
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb9f9019f0c96560800000000000000
+      internalID: 7307584046343625679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run03
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 533
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57526fbbef767ac0800000000000000
+      internalID: -3857755380291315876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run04
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 533
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85787df5af2954b30800000000000000
+      internalID: 4270981425678223192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_jump
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 519
+        width: 29
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712cc508dc11e5e60800000000000000
+      internalID: 7952813566302405143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_jump_vertical
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 522
+        width: 23
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8626c32cbcf8570800000000000000
+      internalID: 8471213459204368633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 533
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672ad53fc6bfd6290800000000000000
+      internalID: -7895378126352571786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_idle
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 501
+        width: 18
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36885ec8a4f8ee440800000000000000
+      internalID: 4967064989390440547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_run01
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 501
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89153335dbdaaf2f0800000000000000
+      internalID: -938246543697030760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_run02
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 501
+        width: 17
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f02fbe4fe76fd20800000000000000
+      internalID: 3311974166373207943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_run03
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 501
+        width: 15
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8bddff8013a1210800000000000000
+      internalID: 1304408956799400130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_run04
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 501
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed33c1e71d968990800000000000000
+      internalID: -7384041813129871904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_crouch
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 501
+        width: 19
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f12a92e0dd777e0800000000000000
+      internalID: -1767701275821858999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: throw01
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 444
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d027b5810ac1b10800000000000000
+      internalID: 1953612364845813094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: throw02
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 444
+        width: 23
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1960a24ebe8a83370800000000000000
+      internalID: 8302571644156249745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch_throw01
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 444
+        width: 22
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64330af723f966690800000000000000
+      internalID: -7609219481157487802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch_throw02
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 444
+        width: 27
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded0b54490c2cff10800000000000000
+      internalID: 2304765527619997165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 444
+        width: 21
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8a3109f0a33cc30800000000000000
+      internalID: 4378407101250382066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_top01
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 450
+        width: 22
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287e1a043e740d160800000000000000
+      internalID: 7048212458202326914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_top02
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 458
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01704fe098444e00800000000000000
+      internalID: 1028026402273784078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_throw01
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 414
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98658c7096aa26d0800000000000000
+      internalID: -3014413861076506470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_throw02
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 414
+        width: 23
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89b62b06fc88cd40800000000000000
+      internalID: 5604884724639512974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_crouch_throw01
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 414
+        width: 19
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53adee61ded62f70800000000000000
+      internalID: 9162255483022451550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_crouch_throw02
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 414
+        width: 23
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05998aae6158a73e0800000000000000
+      internalID: -2055183946468517552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_climb
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 414
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ea73f0624d70ca0800000000000000
+      internalID: -6050634314419818960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_climb_top01
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 420
+        width: 21
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b13888c2e67c160800000000000000
+      internalID: 7045721279592340272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_climb_top02
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 428
+        width: 22
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df7438daeed88b40800000000000000
+      internalID: 5442845249908277203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: first_wound01
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 379
+        width: 29
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53753f373dbe81980800000000000000
+      internalID: -8567838997656414411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: first_wound02
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 377
+        width: 34
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71a3467ab3168dd0800000000000000
+      internalID: -2484276452879261318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: first_wound03
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 369
+        width: 50
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16785fd47a26be490800000000000000
+      internalID: -7715965065862215839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armour
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 377
+        width: 16
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b69fc836514bd90800000000000000
+      internalID: -7083012796635845878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wounded02
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 335
+        width: 25
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882a54be3fffca530800000000000000
+      internalID: 3867747603093758600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wounded01
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 335
+        width: 25
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d495bd4a926a9a040800000000000000
+      internalID: 4659437987281197389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wounded03
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 335
+        width: 31
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb7563a42e7cace0800000000000000
+      internalID: -1392599488939066433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wounded04
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 335
+        width: 30
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfba95e17f3df430800000000000000
+      internalID: 3818277817496027094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wounded05
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 335
+        width: 28
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e644fdd969007b590800000000000000
+      internalID: -7658651994426489746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wounded06
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 335
+        width: 28
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcebff0886e2d5fb0800000000000000
+      internalID: -4657515413255504181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_96
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 312
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d526f65c13adb60800000000000000
+      internalID: 7771578831028247839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_axe
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 291
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b07bb68b916ff30800000000000000
+      internalID: 4608899548532116310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_112
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 291
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897bda20d89b09aa0800000000000000
+      internalID: -6156216675329001576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_113
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 291
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5a28f186bd840b0800000000000000
+      internalID: -5744100084459330126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_114
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 291
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e124d225a4fd09d20800000000000000
+      internalID: 3283369638652363294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_spear
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 278
+        width: 29
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2023721e4f4aca750800000000000000
+      internalID: 6317605748950381058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_116
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 278
+        width: 28
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d81cc284b89431f0800000000000000
+      internalID: -1066059310724015915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_117
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 278
+        width: 29
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d8cbe7527137e80800000000000000
+      internalID: -8182170648194544225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_118
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 278
+        width: 29
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f846b5f6a55c8e170800000000000000
+      internalID: 8208027313088717967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_dagger
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 276
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad336f119c8c948b0800000000000000
+      internalID: -5167378331515604006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_120
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 276
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153dccf6c8bb74570800000000000000
+      internalID: 8450929437629535057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_121
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 276
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49c24c29897baf20800000000000000
+      internalID: 3434972770860190027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_122
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 276
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea78cbf6d2cfa54a0800000000000000
+      internalID: -6603688631507056722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_123
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 255
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a80a617d9790e10800000000000000
+      internalID: 2164395060632783502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_124
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 255
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de2ce580f07b7b50800000000000000
+      internalID: 6591986657928163026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_125
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 255
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c15c612974c28f0800000000000000
+      internalID: -563997160555340730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_126
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 255
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4369055cc84ab9ab0800000000000000
+      internalID: -5000222036752034252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 256
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba2994f4526cae00800000000000000
+      internalID: 1057328129545677497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_128
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 256
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541ecd19273ba4d60800000000000000
+      internalID: 7875304203065549125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_129
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 256
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a6ae2e30cf5fff0800000000000000
+      internalID: -2819131121702270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_130
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 256
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ccf1f9297c407d0800000000000000
+      internalID: -2953016023099388833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_131
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 256
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0.50891113, y: 0.11008453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511ffbeab04732660800000000000000
+      internalID: 7359853809578799381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_132
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 14
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecd116a73cb76440800000000000000
+      internalID: 4929115264375708903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_133
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 256
+        width: 14
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6888a6819b45720800000000000000
+      internalID: 2834093580040570617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_134
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 14
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69c5075dad37c330800000000000000
+      internalID: 3731018630998378862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_137
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 217
+        width: 23
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b3d13bb722c6820800000000000000
+      internalID: 2912740973683227547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_138
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 234
+        width: 13
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4999994, y: 0.15498419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9964e4766d6c840800000000000000
+      internalID: 5244114555302746559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_139
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 235
+        width: 14
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ce895a35260e960800000000000000
+      internalID: 7629205880165690388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_140
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 238
+        width: 8
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc5b216d4335c720800000000000000
+      internalID: 2865753145326918849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_141
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 234
+        width: 29
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b223f3b4c17f150800000000000000
+      internalID: 5906220545828072272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_142
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 233
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625cc48b1044dd750800000000000000
+      internalID: 6331291425330480422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_183
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 193
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40865461512cccb0800000000000000
+      internalID: -4842458865870667702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_185
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 193
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db396678391a9330800000000000000
+      internalID: 3718312172643236825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_186
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 195
+        width: 14
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0dd653e067b00120800000000000000
+      internalID: 2378102230010486029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_194
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 193
+        width: 14
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78b23fbfc7a79940800000000000000
+      internalID: 5302891596959889532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_211
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 148
+        width: 32
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e430503883b48200800000000000000
+      internalID: 181467282509149408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_212
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 148
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725c9e2a3307eb100800000000000000
+      internalID: 125661206691824935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_219
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 148
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa8ab19ce3975000800000000000000
+      internalID: 24650967240313515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_220
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 148
+        width: 10
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48f35a81d363eb90800000000000000
+      internalID: -7213812426497329077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_238
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 110
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e58831b64f1dfbb0800000000000000
+      internalID: -4900726431027788311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_239
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 112
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4fabdc2835bb3d0800000000000000
+      internalID: -3189864089799428905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_240
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 110
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07937f2a26a2a1870800000000000000
+      internalID: 8654276237075102064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_248
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 111
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387991153c577f570800000000000000
+      internalID: 8500392303424804739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_269
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 59
+        width: 20
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4b1eb034e3556f0800000000000000
+      internalID: -696582109675801369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_270
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 61
+        width: 25
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287a6cd2414115490800000000000000
+      internalID: -7759398606082758782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_271
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 61
+        width: 29
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cae7b52bcfdf80c0800000000000000
+      internalID: -4571189033153598775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_272
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 65
+        width: 20
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbfcee15f491ce70800000000000000
+      internalID: 9133745299790822360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: intro
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 61
+        width: 26
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffbcbe82c88e2ec0800000000000000
+      internalID: -3589781483767939086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 57
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3cdc9fb75a965d0800000000000000
+      internalID: -3068739719185710101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_300
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 33
+        width: 6
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a8e193657274580800000000000000
+      internalID: -8843056092039705985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_309
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1907d35de5ddc500800000000000000
+      internalID: 418225555705891101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_311
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1807fe548afe4ca0800000000000000
+      internalID: -6030607404566640610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_312
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 15
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2729e6eaa142028b0800000000000000
+      internalID: -5179099874461838734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_314
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 15
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c182de8583ddab970800000000000000
+      internalID: 8771566458337306652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_0
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 236
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf055a359609b89b0800000000000000
+      internalID: -5076805372880793349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arthur_trans_1
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 238
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27c467d6604d8580800000000000000
+      internalID: -8823325284504385748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

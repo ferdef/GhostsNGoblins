@@ -1,0 +1,14 @@
+ren ack0.gif     back0.gif
+ren ack1.gif     back1.gif
+ren ack2.gif     back2.gif
+ren ack3.gif     back3.gif
+ren ack4.gif     back4.gif
+ren ack5.gif     back5.gif
+ren ack6.gif     back6.gif
+ren ack7.gif     back7.gif
+ren ack8.gif     back8.gif
+ren ack9.gif     back9.gif
+ren ack10.gif    back10.gif
+ren ack11.gif    back11.gif
+ren ack12.gif    back12.gif
+ren ack13.gif    back13.gif

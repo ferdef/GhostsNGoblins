@@ -1,0 +1,1 @@
+Model = new Object();Model.mobile = false;Model.ie8 = false;Model.LNG = "it";

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Ghosts'n Goblins - The World Cup Edition</title>
+<meta name="viewport" content="user-scalable=no">
+<meta name="title" content="Ghosts'n Goblins - The World Cup Edition">
+<meta name="description" content="Can you save your princess from the clutches of the devil? - This small web app is a tribute to a great game that I loved so much in my youth: it's written in JS/HTML5 using the powerful Phaser framework.">
+<meta property="og:image" content="http://www.int33h.com/test/gng/assets/gnglogo.jpg"/>
+<meta property="og:url" content="http://www.int33h.com/test/gng/"/>
+<meta property="og:title" content="Ghosts'n Goblins - The World Cup Edition"/>
+<meta property="og:description" content="Can you save your princess from the clutches of the devil? - This small web app is a tribute to a great game that I loved so much in my youth: it's written in JS/HTML5 using the powerful Phaser framework."/>
+<meta name="author" content="Karza">
+
+<script src="libs/modernizr/modernizr.custom.42003.js"></script>
+<link rel="stylesheet" href="css/main.css">
+
+<script>
+Modernizr.load({
+  load: [
+    "libs/fancybox/jquery.fancybox.css",
+    "libs/fancybox/helpers/jquery.fancybox-buttons.css",
+    "libs/fancybox/helpers/jquery.fancybox-thumbs.css",
+    "libs/createjs/createjs-2013.12.12.min.js",
+    "libs/jquery/jquery-1.11.0.min.js",
+    "libs/jquery/jquery-migrate-1.2.1.min.js",
+    "libs/jquery/jquery.mousewheel-3.0.6.pack.min.js",
+    "libs/jquery/jquery.xml2json.min.js",
+    "libs/jquery/jquery.placeholder.min.js",
+    "libs/greensock/jquery.gsap.min.js",
+    "libs/greensock/plugins/CSSPlugin.min.js",
+    "libs/greensock/easing/EasePack.min.js",
+    "libs/greensock/TweenLite.min.js",
+    "libs/phaser/phaser.min.js",
+    "libs/fancybox/jquery.fancybox.min.js?v=2.1.5",
+    "libs/fancybox/helpers/jquery.fancybox-buttons.min.js?v=1.0.5",
+    "libs/fancybox/helpers/jquery.fancybox-media.min.js?v=1.0.6",
+    "libs/fancybox/helpers/jquery.fancybox-thumbs.min.js?v=1.0.7",
+    "libs/pqp/Pqp.js",
+    "libs/pqp/Bag.js",
+    "libs/pqp/Lng.js",
+    "libs/pqp/Tag.js",
+    "js/webapp/Global.js",
+    "js/webapp/Model.js",
+    "js/webapp/MainAppInits.js",
+    "js/webapp/MainApp.js"
+  ],
+  complete: function () {
+    jQuery(document).ready(init);
+  }
+});
+</script>
+
+
+</head>
+
+<body>
+<div id="linkInt33" style="display:none">
+<a href="http://www.int33h.com/"><img src="http://www.int33h.com/img/logoRound.png"></a>
+
+   <div class="spot">
+   <script type="text/javascript"><!--
+google_ad_client = "ca-pub-8977575973467559";
+/* KfmWeb */
+google_ad_slot = "6192207831";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+   </div>
+
+</div>
+<script>
+function showLink33(){
+  jQuery("#linkInt33").show();
+}
+</script>
+
+<!-- preloader -->
+<div class="preloaderApp">
+  <img class="clipLoader" src="assets/preloader.gif">
+</div>
+
+<!-- main app -->
+
+<div id="mainApp" class="mainApp">
+  <div id="gngWrapper0">
+  <div id="gngWrapper">
+    <div id="gngApp">
+    
+    </div>
+  </div>
+  </div>
+
+
+  <div id="istruzioni" style="display:none">
+      <img src="assets/logoCapcom.jpg" align="left"><label>Released by <b>Capcom</b> in 1985, <b>Ghosts 'n Goblins</b> was one of my favorite side-scrolling platforming game! <br>I loved this game so much in my youth (and spent so much coins on it): for this reason I decided to start learning Phaser by making<br>a small tribute to this game.<br>
+      <a target="_blank" href="http://phaser.io/">Phaser</a> is a very powerful framework for programming games with Javascript/HTML5.<br>A special thanks to <a href="https://twitter.com/marcolago">@marcolago</a> for making the only one piece of graphics that I couldn't to grab from the original game!
+      </label>
+  </div>  
+  <div id="altro" style="display:none">
+    <label id="srcCode">Download <a href="gng.zip">source code</a> of this game.</label><br><br>
+    <label><b>Other demos/experiments I made </b></label><label class="inPiccolo">(in order to re-learn html and javascript after years of Flash programming...)</label>
+    <br>&nbsp;<br>
+    <div id="elencoDemo">
+      <div class="demoElement">
+        <img width="45" height="45" src="" align="left"><label class="demoLabel">label</label>
+      </div>
+    </div>
+    <br>
+    if you want you can <a href="mailto:karza.games@gmail.com">contact me</a>.<br>
+    &nbsp;
+  </div>
+
+</div>
+
+<!-- library -->
+<div id="library" class="library">
+	
+</div>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37032515-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script>
+
+function init(){
+  // Visualizza il preloader
+  Global.initPreloaderApp();
+  // Inizializza l'app
+  var pathRes = "xml/resources.xml";
+  setTimeout(function(){initMainApp(pathRes)} , Global.TEMPO_MINIMO_PRELOADING);
+}
+
+function callTagAlias(parm){
+  // da sostituire con la funzione reale che tagga
+}
+
+
+</script>
+
+
+
+</body>
+</html>

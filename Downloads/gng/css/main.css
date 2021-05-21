@@ -1,0 +1,139 @@
+/* Main  */
+/* Normalizzazione  */
+.preloaderApp *,
+.mainApp *,
+#library * {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222222;
+  color: #ffffff;
+}
+a {
+  color: #ffff00;
+}
+.preloaderApp {
+  width: 100%;
+  height: 896px;
+  background-color: #000000;
+  position: fixed;
+  z-index: 100;
+  margin: 0 auto;
+}
+.clipLoader {
+  position: relative;
+  top: 40%;
+  left: 47%;
+}
+.mainApp {
+  position: relative;
+  background-color: #222222;
+  width: 1024px;
+  height: 896px;
+  display: none;
+  margin: 0 auto;
+}
+.library {
+  display: none;
+}
+.pulsante {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #00ff00;
+}
+.comandi {
+  position: absolute;
+  width: 100%;
+  height: 896px;
+  left: 0;
+  top: 338px;
+  display: none;
+}
+.btnUp {
+  left: 60px;
+}
+.btnLeft {
+  top: 60px;
+  left: 0;
+}
+.btnRight {
+  top: 60px;
+  left: 120px;
+}
+.btnDown {
+  top: 60px;
+  left: 60px;
+}
+.btnFire {
+  right: 60px;
+  top: 60px;
+}
+.btnJump {
+  right: 0px;
+  top: 60px;
+}
+#linkInt33 {
+  width: 1024px;
+  height: 102px;
+  background-color: #222222;
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+}
+.spot {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+}
+#istruzioni {
+  position: absolute;
+  top: 474px;
+  width: 1024px;
+  display: none;
+}
+#istruzioni label {
+  display: block;
+  width: 1024px;
+  padding-left: 90px;
+}
+#altro {
+  position: absolute;
+  top: 580px;
+  width: 1024px;
+}
+.demoElement {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.demoLabel {
+  display: block;
+  padding-top: 15px;
+  padding-left: 60px;
+}
+.inPiccolo {
+  font-size: 12px;
+}
+.noclicklink {
+  color: #aaaa00;
+}
+#gngWrapper {
+  position: relative;
+  width: 512px;
+  height: 896px;
+  margin: 0 auto;
+  display: inline-block;
+}
+#gngWrapper0 {
+  position: relative;
+  width: 1024px;
+  height: 448px;
+  margin: 0 auto;
+  background: #111111;
+  text-align: center;
+}
