@@ -9,3 +9,10 @@
     ShootCrouch,
     LosingArmour,
 }
+
+public enum eZombieState
+{
+    Appearing,
+    Walking,
+    Disappearing,
+}

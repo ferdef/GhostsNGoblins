@@ -9,11 +9,11 @@ public class Player : MonoBehaviour
     public ePlayerState State = ePlayerState.Idle;
     public bool Grounded = false;
 
-    private bool mLookLeft = false;
     private Rigidbody2D mRigidBody;
     private SpriteRenderer mSpriteRenderer;
     private Animator mAnimator;
     private BoxCollider2D mGroundCheckCollider;
+    private LookDirection mLookDir;
 
     private void Awake()
     {
@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
         mSpriteRenderer = this.GetComponent<SpriteRenderer>();
         mAnimator = this.GetComponent<Animator>();
         mGroundCheckCollider = this.GetComponent<BoxCollider2D>();
+        mLookDir = this.GetComponent<LookDirection>();
     }
 
     private void UpdateGroundCheck()
@@ -60,14 +61,14 @@ public class Player : MonoBehaviour
     private void MoveRight()
     {
         mRigidBody.velocity = new Vector2(SpeedX, this.GetComponent<Rigidbody2D>().velocity.y);
-        mLookLeft = false;
+        mLookDir.LookLeft = false;
         this.State = ePlayerState.Run;
     }
 
     private void MoveLeft()
     {
         mRigidBody.velocity = new Vector2(-SpeedX, this.GetComponent<Rigidbody2D>().velocity.y);
-        mLookLeft = true;
+        mLookDir.LookLeft = true;
         this.State = ePlayerState.Run;
     }
 
@@ -143,9 +144,8 @@ public class Player : MonoBehaviour
                 break;
         }
     }
-
     private void UpdateGraphics()
     {
-        mSpriteRenderer.flipX = mLookLeft;
+
     }
 }

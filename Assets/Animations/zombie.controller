@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ZombieDown
+  m_Name: ZombieEnd
   m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions: []
@@ -59,13 +59,13 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7158799645392560214}
-    m_Position: {x: 40, y: 240, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -7816895219122562172}
     m_Position: {x: 260, y: 240, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 4012742499201612765}
+    m_State: {fileID: -7816895219122562172}
     m_Position: {x: 480, y: 240, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4012742499201612765}
+    m_Position: {x: 50, y: 240, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -75,7 +75,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 7158799645392560214}
+  m_DefaultState: {fileID: 4012742499201612765}
 --- !u!1102 &4012742499201612765
 AnimatorState:
   serializedVersion: 6
@@ -83,7 +83,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ZombieRaise
+  m_Name: ZombieStart
   m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions: []
