@@ -355,6 +355,7 @@ GameObject:
   - component: {fileID: 196798276}
   - component: {fileID: 196798275}
   - component: {fileID: 196798274}
+  - component: {fileID: 196798277}
   m_Layer: 6
   m_Name: Zombie
   m_TagString: Untagged
@@ -507,6 +508,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &196798277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196798270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94984287de50a24281ed8976b659438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &240894049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,6 +1534,7 @@ GameObject:
   - component: {fileID: 1570361816}
   - component: {fileID: 1570361817}
   - component: {fileID: 1570361818}
+  - component: {fileID: 1570361819}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -1691,6 +1705,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6666666, y: 0.35305548}
   m_EdgeRadius: 0
+--- !u!114 &1570361819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570361811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94984287de50a24281ed8976b659438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1791602753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,3 +2153,60 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.2244897, y: 0.58184695}
   m_EdgeRadius: 0
+--- !u!1001 &9168086981034217967
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969530, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168086980919969533, guid: d89421fbacba12d41bfcae00392454d5, type: 3}
+      propertyPath: m_Name
+      value: Grave
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d89421fbacba12d41bfcae00392454d5, type: 3}

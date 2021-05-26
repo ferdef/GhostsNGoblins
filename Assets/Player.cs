@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(LookDirection))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class Player : MonoBehaviour
 {
     public float SpeedX = 5f;
