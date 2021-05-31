@@ -10,10 +10,14 @@ public class zombie : MonoBehaviour
 {
     public eZombieState State = eZombieState.Appearing;
     public float SpeedX = 3;
+    public float MaxTimeLiving = 15f;
+    
     private Animator mAnimator;
     private Rigidbody2D mRigidBody;
     private BoxCollider2D mBoxCollider;
     private LookDirection mLookDir;
+    private float mTimeLiving;
+
 
     private void Awake()
     {
@@ -26,11 +30,19 @@ public class zombie : MonoBehaviour
     private void Start()
     {
         mBoxCollider.enabled = false;
+        mTimeLiving = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        mTimeLiving += Time.deltaTime;
+
+        if (mTimeLiving > MaxTimeLiving)
+        {
+            this.State = eZombieState.Disappearing;
+        }
+
         switch (this.State)
         {
             case eZombieState.Appearing:
