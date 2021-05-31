@@ -193,7 +193,7 @@ TextureImporter:
     second: Arthur_124
   - first:
       213: 1343764215787713359
-    second: Arthur_125
+    second: Spear
   - first:
       213: 1529271733818864413
     second: Arthur_126
@@ -429,8 +429,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -1834,7 +1834,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_125
+      name: Spear
       rect:
         serializedVersion: 2
         x: 12

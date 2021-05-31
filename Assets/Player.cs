@@ -13,15 +13,18 @@ public class Player : MonoBehaviour
     public float JumpForceNewtons = 1200f;
     public ePlayerState State = ePlayerState.Idle;
     public bool Grounded = false;
+    public GameObject PrefabShot;
 
     private Rigidbody2D mRigidBody;
     private SpriteRenderer mSpriteRenderer;
     private Animator mAnimator;
     private BoxCollider2D mGroundCheckCollider;
     private LookDirection mLookDir;
+    private List<PlayerShot> mShots = new List<PlayerShot>();
 
     private void Awake()
     {
+        GameManager.Player = this;
         mRigidBody = this.GetComponent<Rigidbody2D>();
         mSpriteRenderer = this.GetComponent<SpriteRenderer>();
         mAnimator = this.GetComponent<Animator>();
@@ -94,6 +97,10 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z) && Grounded)
             Jump();
 
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SpawnShot();
+        }
         if (Input.GetKey(KeyCode.RightArrow) && Grounded)
         {
             MoveRight();
@@ -152,5 +159,14 @@ public class Player : MonoBehaviour
     private void UpdateGraphics()
     {
 
+    }
+
+    private void SpawnShot()
+    {
+        GameObject newObj = GameObject.Instantiate(this.PrefabShot, this.transform.position + new Vector3(0, 1.3f, 0), Quaternion.identity);
+        LookDirection dir = newObj.GetComponent<LookDirection>();
+        dir.LookLeft = this.mLookDir.LookLeft;
+        PlayerShot pShot = newObj.GetComponent<PlayerShot>();
+        mShots.Add(pShot);
     }
 }

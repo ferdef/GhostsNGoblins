@@ -45,3 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabZombie: {fileID: 883393236028971908, guid: d446eb2a4bb13114bb1aa56a9b35a3dd, type: 3}
   SpawnPeridoSecs: 10
+  ActivationThresholdM: 30
