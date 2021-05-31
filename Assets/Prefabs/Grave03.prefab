@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9168086980919969529}
   - component: {fileID: 1307635453884945184}
   m_Layer: 8
-  m_Name: Grave
+  m_Name: Grave03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 9168086980919969533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.44, y: -5.7, z: 0}
-  m_LocalScale: {x: 0.67904466, y: 0.701735, z: 1}
+  m_LocalScale: {x: 0.7283433, y: 0.78389645, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -4681044102383016308, guid: 399bd4b6d895012499ee8a6bcdb82695, type: 3}
+  m_Sprite: {fileID: 7346490297999206173, guid: 399bd4b6d895012499ee8a6bcdb82695, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -113,7 +113,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.25, y: 1.9166666}
+    oldSize: {x: 1.9166666, y: 1.9166666}
     newSize: {x: 2.25, y: 1.9166666}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -121,9 +121,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.55736756, y: 1.8633204}
-      - {x: -0.9320474, y: 1.2366632}
-      - {x: -1.125, y: 0}
-      - {x: 1.125, y: 0}
-      - {x: 1.125, y: 1.5}
-      - {x: 0.7083334, y: 1.9166667}
+    - - {x: -0.26176178, y: 1.9220347}
+      - {x: -0.97995377, y: 1.5952568}
+      - {x: -0.9583334, y: 0}
+      - {x: 0.9583334, y: 0}
+      - {x: 0.8718529, y: 1.5266974}
+      - {x: 0.8718517, y: 1.5491186}
+      - {x: 0.61870354, y: 1.655522}

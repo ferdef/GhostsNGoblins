@@ -15,4 +15,9 @@ public class Grave : MonoBehaviour
     {
         
     }
+
+    public void HitByPlayerShot()
+    {
+        
+    }
 }

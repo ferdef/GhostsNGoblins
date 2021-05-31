@@ -4,13 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -768786762449310870
-    second: Arthur_1
+    second: Grave01
   - first:
       213: -4681044102383016308
-    second: Arthur_2
+    second: Grave02
   - first:
       213: 7346490297999206173
-    second: Arthur_3
+    second: Grave03
   - first:
       213: -721202685715504688
     second: isle
@@ -94,16 +94,16 @@ TextureImporter:
     second: top_ladder02
   - first:
       213: -23378911549632427
-    second: Arthur_54
+    second: Naked_Throw01
   - first:
       213: 3205502847242067293
-    second: Arthur_55
+    second: Naked_Throw02
   - first:
       213: 6269642918220508664
-    second: Arthur_56
+    second: Naked_Crouch_Throw01
   - first:
       213: -3178818979974892677
-    second: Arthur_57
+    second: Naked_Crouch_Throw02
   - first:
       213: -3880479049105381574
     second: Arthur_58
@@ -511,7 +511,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arthur_1
+      name: Grave01
       rect:
         serializedVersion: 2
         x: 38
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_2
+      name: Grave02
       rect:
         serializedVersion: 2
         x: 65
@@ -553,7 +553,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_3
+      name: Grave03
       rect:
         serializedVersion: 2
         x: 100
@@ -1141,7 +1141,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_54
+      name: Naked_Throw01
       rect:
         serializedVersion: 2
         x: 7
@@ -1162,7 +1162,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_55
+      name: Naked_Throw02
       rect:
         serializedVersion: 2
         x: 31
@@ -1183,7 +1183,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_56
+      name: Naked_Crouch_Throw01
       rect:
         serializedVersion: 2
         x: 75
@@ -1204,7 +1204,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_57
+      name: Naked_Crouch_Throw02
       rect:
         serializedVersion: 2
         x: 103
@@ -1435,97 +1435,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_88
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 730
-        width: 6
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0090708c8255aa2d0800000000000000
-      internalID: -3266704946060916480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_89
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 733
-        width: 9
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bd374e241dfb6a70800000000000000
-      internalID: 8821422558252842422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_90
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 734
-        width: 5
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86d6ad58aff291aa0800000000000000
-      internalID: -6189863459810022040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_94
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 721
-        width: 4
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8901ffd3e49c22e20800000000000000
-      internalID: 3324440812837605528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Arthur_95
       rect:
         serializedVersion: 2
-        x: 88
-        y: 719
-        width: 13
-        height: 8
+        x: 80
+        y: 712
+        width: 31
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1535,69 +1451,6 @@ TextureImporter:
       bones: []
       spriteID: 520e9c59f4d381470800000000000000
       internalID: 8365503719865442341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_96
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 725
-        width: 11
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39f773cb6caf19e70800000000000000
-      internalID: 9120346451870187411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_97
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 721
-        width: 9
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83996c00535c63ba0800000000000000
-      internalID: -6109479013044545224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_98
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 726
-        width: 5
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd9652512a6aa2c50800000000000000
-      internalID: 6641303815580903903
       vertices: []
       indices: 
       edges: []
@@ -1619,69 +1472,6 @@ TextureImporter:
       bones: []
       spriteID: f5f183424939d6280800000000000000
       internalID: -9048413811845357729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_101
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 712
-        width: 7
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adffb2bafd3a5ea90800000000000000
-      internalID: -7285236641157087270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_102
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 713
-        width: 5
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b78a6e9ea218b56d0800000000000000
-      internalID: -3000662705399486341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arthur_103
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 713
-        width: 5
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 335ae0f1ac9793ab0800000000000000
-      internalID: -5027853599971039949
       vertices: []
       indices: 
       edges: []

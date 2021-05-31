@@ -21,8 +21,14 @@ public class Player : MonoBehaviour
     private BoxCollider2D mGroundCheckCollider;
     private LookDirection mLookDir;
     private List<PlayerShot> mShots = new List<PlayerShot>();
+    private ePlayerState mStateBeforeShooting = ePlayerState.Shoot;
 
-    private void Awake()
+    public bool IsShooting
+    {
+        get { return this.State == ePlayerState.Shoot || this.State == ePlayerState.ShootCrouch; }
+    }
+
+    void Awake()
     {
         GameManager.Player = this;
         mRigidBody = this.GetComponent<Rigidbody2D>();
@@ -31,24 +37,6 @@ public class Player : MonoBehaviour
         mGroundCheckCollider = this.GetComponent<BoxCollider2D>();
         mLookDir = this.GetComponent<LookDirection>();
     }
-
-    private void UpdateGroundCheck()
-    {
-        Vector2 groundBoxWorldPosition = (Vector2)this.transform.position + this.mGroundCheckCollider.offset;
-        Collider2D[] collisions = Physics2D.OverlapBoxAll(groundBoxWorldPosition, this.mGroundCheckCollider.size, 0f);
-        Grounded = false;
-
-        foreach(var coll in collisions)
-        {
-            if (coll.tag == "Player")
-            {
-                continue;
-            }
-            Grounded = true;
-            break;
-        }
-    }
-
 
     void Start()
     {
@@ -64,6 +52,71 @@ public class Player : MonoBehaviour
         UpdateAnimator();
 
         UpdateGraphics();
+    }
+
+    public void DestroyShot(PlayerShot pShot)
+    {
+        GameObject.Destroy(pShot.gameObject);
+
+        if (mShots.Contains(pShot))
+        {
+            mShots.Remove(pShot);
+        }
+    }
+
+    public void ShootAnimationFinished()
+    {
+        this.State = this.mStateBeforeShooting;
+    }
+
+    private void UpdateGroundCheck()
+    {
+        Vector2 groundBoxWorldPosition = (Vector2)this.transform.position + this.mGroundCheckCollider.offset;
+        Collider2D[] collisions = Physics2D.OverlapBoxAll(groundBoxWorldPosition, this.mGroundCheckCollider.size, 0f);
+        Grounded = false;
+
+        foreach (var coll in collisions)
+        {
+            if (coll.tag == "Player")
+            {
+                continue;
+            }
+            Grounded = true;
+            break;
+        }
+    }
+
+    private void UpdateInput()
+    {
+        // WARNING: Order of these actions is 100% relevant. Shoot and then jump, should preceed to everything else
+
+        if (IsShooting)
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z) && Grounded)
+            Jump();
+        else if (Input.GetKeyDown(KeyCode.X))
+        {
+            Shoot(Input.GetKey(KeyCode.DownArrow));
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            Crouch();
+        }
+        else if (Input.GetKey(KeyCode.RightArrow) && Grounded)
+        {
+            MoveRight();
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow) && Grounded)
+        {
+            MoveLeft();
+        }
+        else if (Grounded)
+        {
+            Stop();
+        }
     }
 
     private void MoveRight()
@@ -90,10 +143,19 @@ public class Player : MonoBehaviour
         this.State = ePlayerState.Crouch;
     }
 
-    private void Shoot()
+    private void Shoot(bool pCrouch)
     {
-        SpawnShot();
+        if (mShots.Count < 3)
+        {
+            mStateBeforeShooting = this.State;
+            SpawnShot();
+            if (pCrouch)
+                this.State = ePlayerState.ShootCrouch;
+            else
+                this.State = ePlayerState.Shoot;
+        }        
     }
+
 
     private void Stop()
     {
@@ -101,39 +163,11 @@ public class Player : MonoBehaviour
         this.State = ePlayerState.Idle;
     }
 
-    private void UpdateInput()
-    {
-        // WARNING: Order of these actions is 100% relevant. Shoot and then jump, should preceed to everything else
-        
-        if (Input.GetKeyDown(KeyCode.Z) && Grounded)
-            Jump();
-
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            Shoot();
-        }
-
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            Crouch();
-        }
-        else if (Input.GetKey(KeyCode.RightArrow) && Grounded)
-        {
-            MoveRight();
-        }
-        else if (Input.GetKey(KeyCode.LeftArrow) && Grounded)
-        {
-            MoveLeft();
-        }
-        else if(Grounded)
-        {
-            Stop();
-        }
-    }
-
     private void UpdateAnimator()
     {
-        if (!this.Grounded)
+        // Make the jump preceed any other animation, except the Shoot animation
+        // The second condition (!IsShooting) allows this, to play the shoot animation if we are in the middle of a Jump
+        if (!Grounded && !IsShooting)
         {
             if(Mathf.Abs(this.mRigidBody.velocity.x) > 1)
                 mAnimator.Play("JumpRunning");
@@ -178,7 +212,8 @@ public class Player : MonoBehaviour
 
     private void SpawnShot()
     {
-        GameObject newObj = GameObject.Instantiate(this.PrefabShot, this.transform.position + new Vector3(0, 1.3f, 0), Quaternion.identity);
+        Vector3 offset = (this.State == ePlayerState.Crouch) ? new Vector3(0, 0.75f, 0) : new Vector3(0, 1.6f, 0);
+        GameObject newObj = GameObject.Instantiate(this.PrefabShot, this.transform.position + offset, Quaternion.identity);
         LookDirection dir = newObj.GetComponent<LookDirection>();
         dir.LookLeft = this.mLookDir.LookLeft;
         PlayerShot pShot = newObj.GetComponent<PlayerShot>();
