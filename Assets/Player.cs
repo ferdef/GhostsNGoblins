@@ -85,6 +85,16 @@ public class Player : MonoBehaviour
         mRigidBody.AddForce(new Vector2(0f, JumpForceNewtons));
     }
 
+    private void Crouch()
+    {
+        this.State = ePlayerState.Crouch;
+    }
+
+    private void Shoot()
+    {
+        SpawnShot();
+    }
+
     private void Stop()
     {
         mRigidBody.velocity = new Vector2(0, this.GetComponent<Rigidbody2D>().velocity.y);
@@ -93,19 +103,24 @@ public class Player : MonoBehaviour
 
     private void UpdateInput()
     {
+        // WARNING: Order of these actions is 100% relevant. Shoot and then jump, should preceed to everything else
         
         if (Input.GetKeyDown(KeyCode.Z) && Grounded)
             Jump();
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            SpawnShot();
+            Shoot();
         }
-        if (Input.GetKey(KeyCode.RightArrow) && Grounded)
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            Crouch();
+        }
+        else if (Input.GetKey(KeyCode.RightArrow) && Grounded)
         {
             MoveRight();
         }
-
         else if (Input.GetKey(KeyCode.LeftArrow) && Grounded)
         {
             MoveLeft();

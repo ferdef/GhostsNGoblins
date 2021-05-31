@@ -49,7 +49,7 @@ TextureImporter:
     second: Arthur_19
   - first:
       213: 3040063035618191647
-    second: Arthur_20
+    second: Crouch
   - first:
       213: -6685789710706312798
     second: Arthur_21
@@ -826,7 +826,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arthur_20
+      name: Crouch
       rect:
         serializedVersion: 2
         x: 223
