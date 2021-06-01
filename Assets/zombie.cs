@@ -59,7 +59,7 @@ public class Zombie : GameElement
         base.MyUpdate();
     }
 
-    public virtual void Destroy()
+    public override void Destroy()
     {
         GameManager.CurrentLevel.DestroyOnNextFrame(this.gameObject);
         base.Destroy();
