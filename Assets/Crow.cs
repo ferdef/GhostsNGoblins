@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Crow : GameElement
 {
+    private bool IsFlying;
+
     // Start is called before the first frame update
     void Start()
     {
