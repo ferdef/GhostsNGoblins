@@ -2,40 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(SpriteRenderer))]
-[RequireComponent(typeof(LookDirection))]
-public class PlayerShot : MonoBehaviour
+
+public class PlayerShot : GameElement
 {
-    public float SpeedX = 40;
-
-    private SpriteRenderer mRender;
-    private Rigidbody2D mRigidBody;
-    private LookDirection mLookDir;
-
-
-    private void Awake()
-    {
-        this.mRender = this.GetComponent<SpriteRenderer>();
-        this.mRigidBody = this.GetComponent<Rigidbody2D>();
-        this.mLookDir = this.GetComponent<LookDirection>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
-    void Update()
+    public override void MyUpdate()
     {
         this.mRigidBody.velocity = new Vector2((mLookDir.LookLeft ? -1 : 1) * SpeedX, 0);
 
-        if (!this.mRender.isVisible)
-        {
-            GameManager.Player.DestroyShot(this);
-        }
+        base.MyUpdate();
+    }
+
+    public override void Destroy()
+    {
+        GameManager.Player.DestroyShot(this);
+        base.Destroy();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

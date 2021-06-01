@@ -2,24 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-[RequireComponent(typeof(LookDirection))]
-[RequireComponent(typeof(SpriteRenderer))]
-public class Player : MonoBehaviour
+public class Player : GameElement
 {
-    public float SpeedX = 5f;
     public float JumpForceNewtons = 1200f;
     public ePlayerState State = ePlayerState.Idle;
     public bool Grounded = false;
     public GameObject PrefabShot;
 
-    private Rigidbody2D mRigidBody;
-    private SpriteRenderer mSpriteRenderer;
-    private Animator mAnimator;
     private BoxCollider2D mGroundCheckCollider;
-    private LookDirection mLookDir;
     private List<PlayerShot> mShots = new List<PlayerShot>();
     private ePlayerState mStateBeforeShooting = ePlayerState.Shoot;
 
@@ -28,22 +19,15 @@ public class Player : MonoBehaviour
         get { return this.State == ePlayerState.Shoot || this.State == ePlayerState.ShootCrouch; }
     }
 
-    void Awake()
+    public override void MyAwake()
     {
+        base.MyAwake();
+
         GameManager.Player = this;
-        mRigidBody = this.GetComponent<Rigidbody2D>();
-        mSpriteRenderer = this.GetComponent<SpriteRenderer>();
-        mAnimator = this.GetComponent<Animator>();
         mGroundCheckCollider = this.GetComponent<BoxCollider2D>();
-        mLookDir = this.GetComponent<LookDirection>();
     }
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
+    public override void MyUpdate()
     {
         UpdateGroundCheck();
 
@@ -52,6 +36,8 @@ public class Player : MonoBehaviour
         UpdateAnimator();
 
         UpdateGraphics();
+
+        base.MyUpdate();
     }
 
     public void DestroyShot(PlayerShot pShot)

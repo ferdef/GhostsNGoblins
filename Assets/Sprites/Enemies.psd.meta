@@ -343,19 +343,19 @@ TextureImporter:
     second: Enemies_112
   - first:
       213: -846593386734640808
-    second: Enemies_113
+    second: CrowIdle01
   - first:
       213: 3005459295459972260
-    second: Enemies_114
+    second: CrowIdle02
   - first:
       213: -2687233724321928115
-    second: Enemies_115
+    second: CrowIdle03
   - first:
       213: 3963637521249654660
-    second: Enemies_116
+    second: CrowIdle0
   - first:
       213: 8393362849812203762
-    second: Enemies_117
+    second: CrowIdle05
   - first:
       213: -5912028405313391129
     second: Enemies_118
@@ -490,7 +490,7 @@ TextureImporter:
     second: Enemies_161
   - first:
       213: -6394019181280219976
-    second: Enemies_162
+    second: Enemies_0334
   - first:
       213: -5440010583854037399
     second: Enemies_163
@@ -969,8 +969,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -3424,7 +3424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_113
+      name: CrowIdle01
       rect:
         serializedVersion: 2
         x: 16
@@ -3445,7 +3445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_114
+      name: CrowIdle02
       rect:
         serializedVersion: 2
         x: 38
@@ -3466,7 +3466,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_115
+      name: CrowIdle03
       rect:
         serializedVersion: 2
         x: 62
@@ -3487,7 +3487,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_116
+      name: CrowIdle0
       rect:
         serializedVersion: 2
         x: 86
@@ -3508,7 +3508,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_117
+      name: CrowIdle05
       rect:
         serializedVersion: 2
         x: 110
@@ -4453,7 +4453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_162
+      name: Enemies_0334
       rect:
         serializedVersion: 2
         x: 240

@@ -2,41 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-[RequireComponent(typeof(LookDirection))]
-public class Zombie : MonoBehaviour
+public class Zombie : GameElement
 {
     public eZombieState State = eZombieState.Appearing;
-    public float SpeedX = 3;
     public float MaxTimeLiving = 15f;
     
-    private Animator mAnimator;
-    private Rigidbody2D mRigidBody;
     private BoxCollider2D mBoxCollider;
-    private LookDirection mLookDir;
     private float mTimeLiving;
     private float mGravityScaleOriginalValue;
 
 
-    private void Awake()
+    public override void MyAwake()
     {
-        this.mAnimator = this.GetComponent<Animator>();
+        base.MyAwake();
         this.mBoxCollider = this.GetComponent<BoxCollider2D>();
-        this.mRigidBody = this.GetComponent<Rigidbody2D>();
-        this.mLookDir = this.GetComponent<LookDirection>();
     }
 
-    private void Start()
+    public override void MyStart()
     {
+        base.MyStart();
+
         this.mGravityScaleOriginalValue = this.mRigidBody.gravityScale;
         mBoxCollider.enabled = false;
         mTimeLiving = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void MyUpdate()
     {
         mTimeLiving += Time.deltaTime;
 
@@ -63,6 +55,14 @@ public class Zombie : MonoBehaviour
                 this.mRigidBody.gravityScale = 0;
                 break;
         }
+
+        base.MyUpdate();
+    }
+
+    public virtual void Destroy()
+    {
+        GameManager.CurrentLevel.DestroyOnNextFrame(this.gameObject);
+        base.Destroy();
     }
 
     /// <summary>
@@ -89,6 +89,6 @@ public class Zombie : MonoBehaviour
 
     public void HitByPlayerShot()
     {
-        GameManager.CurrentLevel.DestroyOnNextFrame(this.gameObject);
+        this.Destroy();
     }
 }
