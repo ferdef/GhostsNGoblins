@@ -58,22 +58,22 @@ TextureImporter:
     second: zombie_down06
   - first:
       213: -1010674888820381983
-    second: Enemies_18
+    second: plant_idle01
   - first:
       213: -4181999719777712613
-    second: Enemies_19
+    second: plant_idle02
   - first:
       213: -3375038303658136201
-    second: Enemies_20
+    second: plant_shot01
   - first:
       213: 1432442515227095082
-    second: Enemies_21
+    second: plant_shot02
   - first:
       213: -4669921857946425314
-    second: Enemies_22
+    second: plant_shot03
   - first:
       213: -731756946235510198
-    second: Enemies_23
+    second: plant_shot04
   - first:
       213: 1621394836268213013
     second: Enemies_24
@@ -85,16 +85,16 @@ TextureImporter:
     second: Enemies_26
   - first:
       213: 8849371530552776352
-    second: Enemies_27
+    second: Plant_Seed01
   - first:
       213: -509115650628796296
-    second: Enemies_28
+    second: Plant_Seed02
   - first:
       213: -8178165961756399743
-    second: Enemies_29
+    second: Plant_Seed03
   - first:
       213: -3934682143293241471
-    second: Enemies_30
+    second: Plant_Seed04
   - first:
       213: -4640851858021030223
     second: Enemies_31
@@ -1429,7 +1429,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_18
+      name: plant_idle01
       rect:
         serializedVersion: 2
         x: 16
@@ -1450,7 +1450,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_19
+      name: plant_idle02
       rect:
         serializedVersion: 2
         x: 40
@@ -1471,7 +1471,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_20
+      name: plant_shot01
       rect:
         serializedVersion: 2
         x: 64
@@ -1492,7 +1492,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_21
+      name: plant_shot02
       rect:
         serializedVersion: 2
         x: 88
@@ -1513,7 +1513,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_22
+      name: plant_shot03
       rect:
         serializedVersion: 2
         x: 112
@@ -1534,7 +1534,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_23
+      name: plant_shot04
       rect:
         serializedVersion: 2
         x: 136
@@ -1618,15 +1618,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_27
+      name: Plant_Seed01
       rect:
         serializedVersion: 2
         x: 248
         y: 1196
         width: 9
         height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1639,15 +1639,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_28
+      name: Plant_Seed02
       rect:
         serializedVersion: 2
         x: 273
         y: 1196
         width: 9
         height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1660,15 +1660,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_29
+      name: Plant_Seed03
       rect:
         serializedVersion: 2
         x: 298
         y: 1196
         width: 9
         height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1681,15 +1681,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_30
+      name: Plant_Seed04
       rect:
         serializedVersion: 2
         x: 323
         y: 1196
         width: 9
         height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
