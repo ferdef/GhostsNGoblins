@@ -12,23 +12,36 @@ public class Zombie : GameElement
     private float mTimeLiving;
     private float mGravityScaleOriginalValue;
 
-
-    public override void MyAwake()
+    /// <summary>
+    /// 
+    /// </summary>
+    public void StartAnimationFinished()
     {
-        base.MyAwake();
+        this.State = eZombieState.Walking;
+        mBoxCollider.enabled = true;
+    }
+
+    public override void HitByPlayerShot()
+    {
+        this.Destroy();
+    }
+
+    protected override void Awake()
+    {
+        base.Awake();
         this.mBoxCollider = this.GetComponent<BoxCollider2D>();
     }
 
-    public override void MyStart()
+    protected override void Start()
     {
-        base.MyStart();
+        base.Start();
 
         this.mGravityScaleOriginalValue = this.mRigidBody.gravityScale;
         mBoxCollider.enabled = false;
         mTimeLiving = 0;
     }
 
-    public override void MyUpdate()
+    protected override void Update()
     {
         mTimeLiving += Time.deltaTime;
 
@@ -56,13 +69,7 @@ public class Zombie : GameElement
                 break;
         }
 
-        base.MyUpdate();
-    }
-
-    public override void Destroy()
-    {
-        GameManager.CurrentLevel.DestroyOnNextFrame(this.gameObject);
-        base.Destroy();
+        base.Update();
     }
 
     /// <summary>
@@ -76,19 +83,5 @@ public class Zombie : GameElement
         {
             mLookDir.LookLeft = !mLookDir.LookLeft;
         }
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public void StartAnimationFinished()
-    {
-        this.State = eZombieState.Walking;
-        mBoxCollider.enabled = true;
-    }
-
-    public void HitByPlayerShot()
-    {
-        this.Destroy();
     }
 }

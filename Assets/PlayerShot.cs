@@ -5,34 +5,29 @@ using UnityEngine;
 
 public class PlayerShot : GameElement
 {
-    // Update is called once per frame
-    public override void MyUpdate()
-    {
-        this.mRigidBody.velocity = new Vector2((mLookDir.LookLeft ? -1 : 1) * SpeedX, 0);
-
-        base.MyUpdate();
-    }
-
     public override void Destroy()
     {
         GameManager.Player.DestroyShot(this);
-        base.Destroy();
+
+        // Intentionally avoiding to call the base class, as we override this behavior
+        // base.Destroy();
+    }
+
+    // Update is called once per frame
+    protected override void Update()
+    {
+        this.mRigidBody.velocity = new Vector2((mLookDir.LookLeft ? -1 : 1) * SpeedX, 0);
+
+        base.Update();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Zombie zombie = collision.collider.GetComponent<Zombie>();
-        if (zombie != null)
+        GameElement element = collision.collider.GetComponent<GameElement>();
+        if (element != null)
         {
-            zombie.HitByPlayerShot();
-            GameManager.Player.DestroyShot(this);
-        }
-
-        Grave grave = collision.collider.GetComponent<Grave >();
-        if (grave != null)
-        {
-            grave.HitByPlayerShot();
-            GameManager.Player.DestroyShot(this);
+            element.HitByPlayerShot();
+            this.Destroy();
         }
     }
 }

@@ -19,27 +19,6 @@ public class Player : GameElement
         get { return this.State == ePlayerState.Shoot || this.State == ePlayerState.ShootCrouch; }
     }
 
-    public override void MyAwake()
-    {
-        base.MyAwake();
-
-        GameManager.Player = this;
-        mGroundCheckCollider = this.GetComponent<BoxCollider2D>();
-    }
-
-    public override void MyUpdate()
-    {
-        UpdateGroundCheck();
-
-        UpdateInput();
-
-        UpdateAnimator();
-
-        UpdateGraphics();
-
-        base.MyUpdate();
-    }
-
     public void DestroyShot(PlayerShot pShot)
     {
         GameObject.Destroy(pShot.gameObject);
@@ -53,6 +32,27 @@ public class Player : GameElement
     public void ShootAnimationFinished()
     {
         this.State = this.mStateBeforeShooting;
+    }
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        GameManager.Player = this;
+        mGroundCheckCollider = this.GetComponent<BoxCollider2D>();
+    }
+
+    protected override void Update()
+    {
+        UpdateGroundCheck();
+
+        UpdateInput();
+
+        UpdateAnimator();
+
+        UpdateGraphics();
+
+        base.Update();
     }
 
     private void UpdateGroundCheck()

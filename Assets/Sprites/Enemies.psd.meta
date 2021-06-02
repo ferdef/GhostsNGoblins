@@ -376,22 +376,22 @@ TextureImporter:
     second: Enemies_123
   - first:
       213: -3677388578715449969
-    second: Enemies_124
+    second: Crow_Fly01
   - first:
       213: 3701666406343386126
-    second: Enemies_125
+    second: Crow_Fly02
   - first:
       213: 3660494594444218831
-    second: Enemies_126
+    second: Crow_Fly03
   - first:
       213: 7027872553957238786
-    second: Enemies_127
+    second: Crow_Fly04
   - first:
       213: -137540584029387419
-    second: Enemies_128
+    second: Crow_Fly05
   - first:
       213: -6154621009441377342
-    second: Enemies_129
+    second: Crow_Fly06
   - first:
       213: 6586712776753073204
     second: Enemies_130
@@ -3655,7 +3655,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_124
+      name: Crow_Fly01
       rect:
         serializedVersion: 2
         x: 306
@@ -3676,7 +3676,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_125
+      name: Crow_Fly02
       rect:
         serializedVersion: 2
         x: 330
@@ -3697,7 +3697,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_126
+      name: Crow_Fly03
       rect:
         serializedVersion: 2
         x: 354
@@ -3718,7 +3718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_127
+      name: Crow_Fly04
       rect:
         serializedVersion: 2
         x: 378
@@ -3739,7 +3739,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_128
+      name: Crow_Fly05
       rect:
         serializedVersion: 2
         x: 402
@@ -3760,7 +3760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_129
+      name: Crow_Fly06
       rect:
         serializedVersion: 2
         x: 426

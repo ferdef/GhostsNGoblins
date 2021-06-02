@@ -19,7 +19,16 @@ public class GameElement : MonoBehaviour
     public float SpeedX;
     public bool DestroyWhenNotVisible = false;
 
-    public virtual void MyAwake()
+    public virtual void Destroy()
+    {
+        GameObject.Destroy(this.gameObject);
+    }
+
+    public virtual void HitByPlayerShot()
+    {
+    }
+
+    protected virtual void Awake()
     {
         this.mRender = this.GetComponent<SpriteRenderer>();
         this.mRigidBody = this.GetComponent<Rigidbody2D>();
@@ -27,37 +36,16 @@ public class GameElement : MonoBehaviour
         this.mAnimator = this.GetComponent<Animator>();
     }
 
-    public virtual void MyStart()
+    protected virtual void Start()
     {
-
     }
 
-    public virtual void MyUpdate()
+    protected virtual void Update()
     {
         if (DestroyWhenNotVisible && !this.mRender.isVisible)
         {
             this.Destroy();
         }
-    }
-
-    public virtual void Destroy()
-    {
-
-    }
-
-    private void Awake()
-    {
-        MyAwake();
-    }
-
-    private void Update()
-    {
-        MyUpdate();    
-    }
-
-    private void Start()
-    {
-        MyStart();
     }
 }
 
