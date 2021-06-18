@@ -10,13 +10,26 @@ public class Player : GameElement
     public bool Grounded = false;
     public GameObject PrefabShot;
 
+    public float PlayerSpeedLadder = 10f;
+
+    public Ladder InLadder;
+    public bool ReadyToClimbUp;
+    public bool ReadyToClimbDown;
+
     private BoxCollider2D mGroundCheckCollider;
     private List<PlayerShot> mShots = new List<PlayerShot>();
     private ePlayerState mStateBeforeShooting = ePlayerState.Shoot;
+    private float mGravityScaleOriginalValue;
+    
 
     public bool IsShooting
     {
         get { return this.State == ePlayerState.Shoot || this.State == ePlayerState.ShootCrouch; }
+    }
+
+    public bool IsClimbing
+    {
+        get { return this.State == ePlayerState.Climb;  }
     }
 
     public void DestroyShot(PlayerShot pShot)
@@ -34,6 +47,11 @@ public class Player : GameElement
         this.State = this.mStateBeforeShooting;
     }
 
+    public void HitByPlantShot()
+    {
+
+    }
+
     protected override void Awake()
     {
         base.Awake();
@@ -42,8 +60,16 @@ public class Player : GameElement
         mGroundCheckCollider = this.GetComponent<BoxCollider2D>();
     }
 
+    protected override void Start()
+    {
+        mGravityScaleOriginalValue = this.mRigidBody.gravityScale;
+        base.Start();
+    }
+
     protected override void Update()
     {
+        SearchLadders();
+
         UpdateGroundCheck();
 
         UpdateInput();
@@ -51,6 +77,8 @@ public class Player : GameElement
         UpdateAnimator();
 
         UpdateGraphics();
+
+        UpdatePhysics();
 
         base.Update();
     }
@@ -63,7 +91,7 @@ public class Player : GameElement
 
         foreach (var coll in collisions)
         {
-            if (coll.tag == "Player")
+            if (coll.tag == "Player" || coll.tag == "Ladders")
             {
                 continue;
             }
@@ -81,13 +109,18 @@ public class Player : GameElement
             return;
         }
 
+        if(IsClimbing && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+        {
+            StopClimbing();
+        }
+
         if (Input.GetKeyDown(KeyCode.Z) && Grounded)
             Jump();
         else if (Input.GetKeyDown(KeyCode.X))
         {
             Shoot(Input.GetKey(KeyCode.DownArrow));
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow) && !IsClimbing && !ReadyToClimbDown)
         {
             Crouch();
         }
@@ -98,6 +131,14 @@ public class Player : GameElement
         else if (Input.GetKey(KeyCode.LeftArrow) && Grounded)
         {
             MoveLeft();
+        }
+        else if (ReadyToClimbUp && Input.GetKey(KeyCode.UpArrow))
+        {
+            ClimbUp();
+        }
+        else if (ReadyToClimbDown && Input.GetKey(KeyCode.DownArrow))
+        {
+            ClimbDown();
         }
         else if (Grounded)
         {
@@ -153,7 +194,7 @@ public class Player : GameElement
     {
         // Make the jump preceed any other animation, except the Shoot animation
         // The second condition (!IsShooting) allows this, to play the shoot animation if we are in the middle of a Jump
-        if (!Grounded && !IsShooting)
+        if (!Grounded && !IsShooting && !IsClimbing)
         {
             if(Mathf.Abs(this.mRigidBody.velocity.x) > 1)
                 mAnimator.Play("JumpRunning");
@@ -204,5 +245,64 @@ public class Player : GameElement
         dir.LookLeft = this.mLookDir.LookLeft;
         PlayerShot pShot = newObj.GetComponent<PlayerShot>();
         mShots.Add(pShot);
+    }
+
+    private void SearchLadders()
+    {
+        GameManager.Player.InLadder = null;
+        GameManager.Player.ReadyToClimbUp = false;
+        GameManager.Player.ReadyToClimbDown = false;
+
+        foreach (Ladder ladder in GameManager.CurrentLevel.Ladders)
+        { 
+            if (ladder.PrincipalTrigger.bounds.Contains(GameManager.Player.transform.position))
+            {
+                Debug.Log("Principal");
+                GameManager.Player.InLadder = ladder;
+                GameManager.Player.ReadyToClimbDown = true;
+                GameManager.Player.ReadyToClimbUp = true;
+            }
+            else if (ladder.UpTrigger.bounds.Contains(GameManager.Player.transform.position))
+            {
+                Debug.Log("Up");
+                GameManager.Player.ReadyToClimbUp = true;
+            }
+            else if (ladder.DownTrigger.bounds.Contains(GameManager.Player.transform.position))
+            {
+                Debug.Log("Down");
+                GameManager.Player.ReadyToClimbDown = true;
+            }
+        }
+    }
+
+    private void ClimbUp()
+    {
+        this.State = ePlayerState.Climb;
+        mRigidBody.velocity = new Vector2(0, PlayerSpeedLadder);
+    }
+
+    private void ClimbDown()
+    {
+        this.State = ePlayerState.Climb;
+        mRigidBody.velocity = new Vector2(0, -PlayerSpeedLadder);
+    }
+
+    private void StopClimbing()
+    {
+        mRigidBody.velocity = Vector2.zero;
+    }
+
+    private void UpdatePhysics()
+    {
+        switch (this.State)
+        {
+            case ePlayerState.Climb:
+                this.mRigidBody.gravityScale = 0;
+                break;
+            default:
+                this.mRigidBody.gravityScale = mGravityScaleOriginalValue;
+                break;
+
+        }
     }
 }
