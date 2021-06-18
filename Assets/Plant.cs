@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Plant : GameElement
 {
+    public GameObject PlantShotPrefab;
     public float ShotsPeriodSecs = 4;
     private float mTimeToNextShot;
 
@@ -32,5 +33,12 @@ public class Plant : GameElement
             }
         }
         base.Update();
+    }
+
+    private void SpawnPlantShot()
+    {
+        GameObject newObj =  GameObject.Instantiate(PlantShotPrefab, this.transform.position + new Vector3(0,1,0), Quaternion.identity);
+        PlantShot shot = newObj.GetComponent<PlantShot>();
+        shot.Direction = (GameManager.Player.transform.position + new Vector3(0, 1, 0)  - this.transform.position).normalized;
     }
 }

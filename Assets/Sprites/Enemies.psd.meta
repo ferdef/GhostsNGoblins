@@ -64,25 +64,25 @@ TextureImporter:
     second: plant_idle02
   - first:
       213: -3375038303658136201
-    second: plant_shot01
+    second: plant_idle03
   - first:
       213: 1432442515227095082
-    second: plant_shot02
+    second: plant_idle04
   - first:
       213: -4669921857946425314
-    second: plant_shot03
+    second: plant_idle05
   - first:
       213: -731756946235510198
-    second: plant_shot04
+    second: plant_idle06
   - first:
       213: 1621394836268213013
-    second: Enemies_24
+    second: plant_idle07
   - first:
       213: 368555085621994118
-    second: Enemies_25
+    second: plant_idle08
   - first:
       213: -3567033628092068868
-    second: Enemies_26
+    second: plant_idle09
   - first:
       213: 8849371530552776352
     second: Plant_Seed01
@@ -1471,7 +1471,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_shot01
+      name: plant_idle03
       rect:
         serializedVersion: 2
         x: 64
@@ -1492,7 +1492,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_shot02
+      name: plant_idle04
       rect:
         serializedVersion: 2
         x: 88
@@ -1513,7 +1513,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_shot03
+      name: plant_idle05
       rect:
         serializedVersion: 2
         x: 112
@@ -1534,7 +1534,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_shot04
+      name: plant_idle06
       rect:
         serializedVersion: 2
         x: 136
@@ -1555,7 +1555,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_24
+      name: plant_idle07
       rect:
         serializedVersion: 2
         x: 160
@@ -1576,7 +1576,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_25
+      name: plant_idle08
       rect:
         serializedVersion: 2
         x: 184
@@ -1597,7 +1597,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemies_26
+      name: plant_idle09
       rect:
         serializedVersion: 2
         x: 208
